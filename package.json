@@ -6,7 +6,9 @@
   "scripts": {
     "start": "bun run src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bun build src/index.ts --outdir dist"
+    "build": "bun build src/index.ts --outdir dist",
+    "lint": "biome lint",
+    "format": "biome format --write"
   },
   "author": "Vitalii Balabanov",
   "email": "tertiumnon@gmail.com",
@@ -18,16 +20,10 @@
     "markdown-it": "^13.0.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.8.0",
     "@types/express": "^4.17.17",
     "@types/markdown-it": "^13.0.1",
     "@types/node": "^18.17.17",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "@typescript-eslint/utils": "^6.0.0",
-    "eslint": "^8.49.0",
-    "eslint-plugin-local": "^1.0.0",
-    "eslint-plugin-no-null": "^1.0.2",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
     "typescript": "^5.2.2"
   }
 }
