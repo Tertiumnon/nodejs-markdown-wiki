@@ -8,7 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "bun build src/index.ts --outdir dist",
     "lint": "biome lint",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "release:patch": "node ./node_modules/@tertium/js/scripts/release.js patch",
+    "release:minor": "node ./node_modules/@tertium/js/scripts/release.js minor",
+    "release:major": "node ./node_modules/@tertium/js/scripts/release.js major"
   },
   "author": "Vitalii Balabanov",
   "email": "tertiumnon@gmail.com",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.0",
+    "@tertium/js": "^1.4.8",
     "@types/express": "^4.17.17",
     "@types/markdown-it": "^13.0.1",
     "@types/node": "^18.17.17",
