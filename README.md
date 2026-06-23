@@ -65,7 +65,7 @@ npm run release:major # Major release (bump major version)
 ## Project Structure
 
 ```
-nodejs-markdown-wiki/
+tertium-js-markdown-wiki/
 ├── src/
 │   ├── index.ts              # Express server
 │   └── utils/
